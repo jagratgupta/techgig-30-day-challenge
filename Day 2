@@ -1,0 +1,23 @@
+// Day 2 : Exploring Data Types
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+            Scanner sc = new Scanner(System.in);
+    	//Write code here
+        //String str = sc.nextLine();
+
+if(sc.hasNextInt()){
+System.out.print("This input is of type Integer.");
+}else if(sc.hasNextFloat()){
+System.out.print("This input is of type Float.");
+}else if (sc.hasNextLine()){
+System.out.print("This input is of type string.");
+}else {
+System.out.print("This is something else.");
+}
+          
+   }
+}

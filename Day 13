@@ -1,0 +1,52 @@
+// Day 13 : Roll your matrix
+
+/* Read input from STDIN. Print your output to STDOUT*/
+
+/* Read input from STDIN. Print your output to STDOUT*/
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+   public static void main(String args[] ) throws Exception {
+       
+   int m, n, c,d;
+         Scanner in = new Scanner(System.in);
+ 
+      //System.out.println("Input number of rows of matrix");
+      m = in.nextInt();
+    //  System.out.println("Input number of columns of matrix");
+      n  = in.nextInt();
+ 
+      int array1[][] = new int[m][n];
+      int count=0;
+   int count1;
+
+ 
+    //  System.out.println("Input elements of first matrix");
+
+      for (  c = 0 ; c < m ; c++ )
+         for ( d = 0 ; d < n ; d++ )
+            array1[c][d] = in.nextInt();
+
+// It is transpose thats why n,m in loop
+
+//count is to prevent extra print in new line
+//count1 is to prevent extra space after last character
+      for (  c = 0 ; c < n ; c++ ){
+         count1=0;
+         for ( d = 0 ; d < m ; d++ ){
+            count1++;
+            if(count1==m)
+              System.out.print(array1[d][c]+"");
+            else
+             System.out.print(array1[d][c]+" ");
+         }
+         count++;
+         if(count==n)
+            break;
+         System.out.println();
+      }
+ 
+   }
+}

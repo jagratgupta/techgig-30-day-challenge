@@ -1,0 +1,33 @@
+
+// Day 9 : Is Your Number Narcissistic?
+import static java.lang.Math.*;
+import java.io.*;
+import java.util.*;
+  import java.util.Scanner;
+
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+		Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+    	
+        int no=0;
+        int count=0;
+		int temp=a;
+		int temp1=a;
+	while(temp!=0)
+	{
+			count++;
+		temp=temp/10;
+	}
+
+	while(temp1 != 0)  
+		{ 
+			no += pow(temp1 % 10, count); 
+			temp1 /= 10; 
+		} 
+		if(no==a)
+		System.out.print("True");
+		else
+		System.out.print("False");
+   }
+}

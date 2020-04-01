@@ -1,0 +1,38 @@
+// Day 10 : Who's the second largest?
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+
+  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int T = Integer.parseInt(br.readLine());
+     String[] arr1 = br.readLine().split(" ");
+            int[] arr = new int[T];
+ 
+                //  System.out.print("qqfffff");
+            for(int i=0; i<arr1.length; i++)
+            {
+            	arr[i] = Integer.parseInt(arr1[i]);
+                  //  System.out.print(arr[i]);
+            }   
+      
+int max=0;
+int smax=0;
+    //  System.out.print("fffff");
+for(int j=0;j<arr.length;j++)
+{
+    if(arr[j]>max){
+      smax=max;
+    max=arr[j];}
+
+      else if(arr[j]>smax && arr[j]!=max)
+      smax=arr[j];
+  }
+
+      System.out.print(smax);
+   }
+}

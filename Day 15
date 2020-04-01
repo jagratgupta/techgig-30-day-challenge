@@ -1,0 +1,20 @@
+// Day 15 : Calculate power using Recursion
+
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    	Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+        int res=1;
+for(int i=1;i<=b;i++)
+{ 
+    res =res*a;
+}
+System.out.print(res+"");
+   }
+}

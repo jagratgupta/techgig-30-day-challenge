@@ -1,0 +1,26 @@
+//  Day 27 : Play with digits of a number
+ 
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+Scanner sc = new Scanner(System.in);
+       int a=sc.nextInt();
+int oddsum=0;
+int evensum=0;
+
+         while (a!= 0) {
+            int r = a % 10;
+                if(r%2==0)
+                    evensum=evensum+r;
+                else
+                    oddsum=oddsum+r;
+            a=a/10;
+         }
+         int val = Math.abs(evensum-oddsum);
+        System.out.print(val);
+   }
+}

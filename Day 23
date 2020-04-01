@@ -1,0 +1,30 @@
+// Day 23 : Maximum Vs Minimum
+
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+ Scanner sc = new Scanner(System.in);
+        int no =sc.nextInt();
+        int arr[] = new int[no];
+     
+        for(int i=0;i<no;i++){
+            arr[i]=sc.nextInt();   
+        }
+
+           int max=arr[0];
+              int min=arr[0];
+         for(int i=0;i<no;i++){
+
+           if(arr[i]<min)
+             min=arr[i];
+
+              if(arr[i]>max)
+            max=arr[i];
+        }  
+        
+             System.out.print(max*min);
+   }
+}

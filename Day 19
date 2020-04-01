@@ -1,0 +1,26 @@
+// Day 19 : Binary To Decimal
+
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+            Scanner sc = new Scanner(System.in);
+       String str=sc.nextLine();
+        int count=str.length();
+        int base=1;
+        int a =Integer.parseInt(str);
+        int sum=0;
+
+       while(a!=0){
+            int r=a%10;
+            sum=sum+ r*base;
+            a=a/10;
+            base=base*2;
+        }
+        System.out.print(sum);
+   }
+}

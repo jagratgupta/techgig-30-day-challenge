@@ -1,0 +1,24 @@
+//Day 4 : Decide yourself with conditional statement
+
+
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if(age<10)
+            System.out.print("I am happy as having no responsibilities."); 
+
+        if(age>=10 && age< 18)
+            System.out.print("I am still happy but starts feeling pressure of life.");
+
+        if(age>=18)
+            System.out.print("I am very much happy as i handled the pressure very well.");
+    	//Write code here
+
+   }
+}

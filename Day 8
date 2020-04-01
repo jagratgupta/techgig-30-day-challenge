@@ -1,0 +1,29 @@
+//  Day 8 Is your Number Armstrong?
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+   public static void main(String args[] ) throws Exception {
+  
+  Scanner sc = new Scanner(System.in);
+  int a = sc.nextInt();
+	
+	int temp=a;
+	int no=0;
+	while(temp!=0)
+	{
+	int r=temp%10;
+	no=no+r*r*r;
+
+	temp=temp/10;
+	}
+	if(no==a)
+	{
+	   System.out.print("True");
+	}
+	else
+	   System.out.print("False");
+
+  }
+}

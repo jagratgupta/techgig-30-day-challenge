@@ -1,0 +1,24 @@
+//Day 21 : Multiplication between odd and even
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+            Scanner sc = new Scanner(System.in);
+    	//Write code here
+        int no =sc.nextInt();
+        int arr[] = new int[no];
+        int sumodd=0;
+        int sumeven=0;
+        for(int i=0;i<no;i++){
+            arr[i]=sc.nextInt();
+           
+           if(arr[i]%2==0)
+           sumeven=sumeven+arr[i];
+           else
+           sumodd=sumodd+arr[i];
+        }
+        System.out.print(sumeven*sumodd);
+   }
+}

@@ -1,0 +1,45 @@
+// Day 17 : Find pairs
+
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+   
+
+    
+        static int i,j,sum;
+		
+//System.out.print(n2);
+public static void find(int[] arr, int n2){
+for( i=0;i<arr.length-1;i++)
+{
+    for(j=i+1;j<arr.length;j++)
+    {
+        
+         if(arr[i]+arr[j]==n2){
+        System.out.print("True");
+         return;
+         }
+    }
+     }
+     System.out.print("False");
+}
+
+      public static void main(String args[] ) throws Exception {
+          	Scanner sc = new Scanner(System.in);
+           int n1 = sc.nextInt();  
+        // System.out.println(n1);
+         int arr[]= new int[n1];
+        // int n2 =Integer.parseInt(sc.next());
+         int a;
+for( a=0;a<n1;a++)
+{
+    arr[a]=sc.nextInt();
+  //  System.out.println(arr[0]);
+}
+ int n2 = sc.nextInt();  
+ find(arr,n2);
+
+}
+}

@@ -1,0 +1,46 @@
+// Day 7 : Count special numbers between boundaries
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+    int s1, s2,count = 0, i, j;
+    int total=0;
+		Scanner s = new Scanner(System.in);
+	//	System.out.print("Enter the lower limit : "); 
+		s1 = s.nextInt();
+	//	System.out.print("Enter the upper limit :"); 
+		s2 = s.nextInt();
+	//	System.out.println("Prime numbers between given range are :");
+
+		for(i = s1; i <= s2; i++)
+		{
+            if(i==2)
+             count=1;
+			for( j = 2; j < i; j++)
+			{
+                /*if(i==2 && i % j == 0)
+                {
+                    count=1;
+                }*/
+				if(i % j == 0)
+				{
+					count = 0;
+					break;
+				}
+				else
+				{
+					count = 1;
+                   
+				}
+			}
+			if(count == 1)
+			{
+                 total++;
+				//System.out.println(i);
+			}
+		}
+        System.out.print(total);
+   }
+}

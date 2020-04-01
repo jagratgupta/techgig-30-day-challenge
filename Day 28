@@ -1,0 +1,39 @@
+// Day 28 : Compare two numbers
+
+
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    Scanner sc = new Scanner(System.in);
+       int a=sc.nextInt();
+       int b =sc.nextInt();
+
+       int tempa=a;
+       int tempb=b;
+  //   System.out.println(a+" "+b);
+    int sum1=0,sum2=0;
+          while (a!= 0) {
+            int r = a % 10;
+                sum1=sum1+r;
+             a=a/10;   
+   }
+  // System.out.println(sum1);
+
+             while (b!= 0) {
+            int k = b % 10;
+                sum2=sum2+k;
+            b=b/10;   
+   }
+     // System.out.println(sum2);
+
+if(sum1==sum2)
+        System.out.print("Equal");
+else if(sum1>sum2)
+        System.out.print(tempa);
+    else if(sum1<sum2)
+        System.out.print(tempb);
+    }
+}

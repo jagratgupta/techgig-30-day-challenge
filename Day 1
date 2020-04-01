@@ -1,0 +1,16 @@
+///Day 1 : Hello TechGigs
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        System.out.println("Hello Techgig");
+        System.out.print(str);
+    	//Write code here
+
+   }
+}

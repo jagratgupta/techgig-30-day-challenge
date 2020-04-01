@@ -1,0 +1,19 @@
+// Day 6 : How Much Big Is Your Number
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    	//Write code here
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int count=0;
+        while(a!=0){
+             a=a/10; 
+            count++;
+        }
+        System.out.print(count+"");
+   }
+}

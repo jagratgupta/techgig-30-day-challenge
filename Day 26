@@ -1,0 +1,25 @@
+//  Day 26 : Biggest Digit In A Number
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+  Scanner sc = new Scanner(System.in);
+       int a=sc.nextInt();
+        int ld=0;
+
+        while (a> 0) {
+            int r = a % 10;
+            if (ld < r) {
+                ld = r;
+            }
+            a = a / 10;
+        }
+
+        System.out.print(ld);
+
+
+
+   }
+}
